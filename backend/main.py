@@ -44,6 +44,10 @@ app.config["UPLOAD_FOLDER"] = UPLOAD_FOLDER
 
 file_path = None
 
+@app.route("/")
+def home():
+    return "Flask backend deployed on Render.com!"
+
 @app.route("/api/status", methods=["GET"])
 def status():
     """Check if the backend is running."""
@@ -120,7 +124,7 @@ def get_disease_info():
     return jsonify(ai_results)
 
 if __name__ == "__main__":
-    app.run(debug=True, port=5000)
+    app.run(host="0.0.0.0", port=10000)  # Use the PORT from render.yaml
 
 
 # "Cellulitis", "Impetigo", "Ringworm", "Cutaneous-larva-migrans", "Chickenpox", "Shingles"
