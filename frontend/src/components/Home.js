@@ -14,7 +14,7 @@ function HomePage() {
           <div>
             <h1 className='t1'>Say No to Skin Diseases!</h1>
             <p className='p11'>Check your skin on the smartphone and get instant results.*</p>
-            <Link to="/upload"><button className="gradient-button">CHECK YOUR SKIN NOW</button></Link>
+            <Link to="/Project-College-3rdYr-Final-Year-Project/upload"><button className="gradient-button">CHECK YOUR SKIN NOW</button></Link>
           </div>
           <div>
             <img src={skin} alt='' width='500' className='sk'></img>
