@@ -1,18 +1,26 @@
-import React from "react";
-import "./App.css";
-import { NavigationProvider } from "./context/NavigationContext";
-import Navbar from "./components/Navbar";
+import React from 'react';
+import './App.css';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import '@fortawesome/fontawesome-free/css/all.min.css';
+import Navbar from './components/Navbar';
+import HomePage from './components/Home';
+import Apage from './components/Ab';
+import Upload from './components/Upload';
+// import Formm from './Components/Formm';
+// import AIChatbotResult from './Components/AIBotResult';
 
 function App() {
   return (
-    <NavigationProvider>
+    <Router>
       <Navbar />
-      <main>
-        <NavigationProvider.Consumer>
-          {({ getPageComponent }) => getPageComponent()}
-        </NavigationProvider.Consumer>
-      </main>
-    </NavigationProvider>
+      <Routes>
+        <Route path="/" element={<HomePage />} />
+        <Route path="/about" element={<Apage />} />
+        <Route path="/upload" element={<Upload />} />
+        {/* <Route path="/form" element={<Formm />} /> */}
+        {/* <Route path="/chatbot" element={<AIChatbotResult />} /> */}
+      </Routes>
+    </Router>
   );
 }
 
