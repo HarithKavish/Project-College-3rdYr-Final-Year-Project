@@ -1,9 +1,11 @@
-import { Link } from 'react-router-dom';
+import React, { useContext } from "react";
+import { NavigationContext } from "../context/NavigationContext";
 import skin from '../assets/skinvision.webp';
 import car from '../assets/rash.png';
 import Footer from './Footer';
 import './Home.css';
 function HomePage() {
+  const { navigate } = useContext(NavigationContext);
   return (
     <div className='main'>
       <div className='bbox'>
@@ -14,7 +16,7 @@ function HomePage() {
           <div>
             <h1 className='t1'>Say No to Skin Diseases!</h1>
             <p className='p11'>Check your skin on the smartphone and get instant results.*</p>
-            <Link to="/Project-College-3rdYr-Final-Year-Project/upload"><button className="gradient-button">CHECK YOUR SKIN NOW</button></Link>
+            <button className="gradient-button" onClick={() => navigate("upload")}>CHECK YOUR SKIN NOW</button>
           </div>
           <div>
             <img src={skin} alt='' width='500' className='sk'></img>

@@ -1,21 +1,21 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
-import logo from '../assets/logo.png';
-import './Navbar.css';
+import React, { useContext } from "react";
+import logo from "../assets/logo.png";
+import { NavigationContext } from "../context/NavigationContext";
+import "./Navbar.css";
 
 function Navbar() {
+  const { navigate } = useContext(NavigationContext);
+
   return (
     <nav className="navbar">
       <ul>
         <li>
-            <img src={logo} alt='logo'></img>
-            <h1>SkinNet Analyzer</h1>
+          <img src={logo} alt="logo" />
+          <h1>SkinNet Analyzer</h1>
         </li>
-        <li><Link to="/Project-College-3rdYr-Final-Year-Project/">Home</Link></li>
-        <li><Link to="/Project-College-3rdYr-Final-Year-Project/about">About</Link></li>
-        <li><Link to="/Project-College-3rdYr-Final-Year-Project/upload">Upload</Link></li>
-        {/* <li><Link to="/form">Symptoms</Link></li> */}
-        {/* <li><Link to="/chatbot">AI Chatbot</Link></li> */}
+        <li><button onClick={() => navigate("home")}>Home</button></li>
+        <li><button onClick={() => navigate("about")}>About</button></li>
+        <li><button onClick={() => navigate("upload")}>Upload</button></li>
       </ul>
     </nav>
   );
