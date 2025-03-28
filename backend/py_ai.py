@@ -1,5 +1,4 @@
 # API Key
-# API_KEY = 'AIzaSyCyZxm_TFM3Z-LxcJaqES_FnkEGlFIrAOk'
 
 """
 
