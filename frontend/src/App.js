@@ -17,8 +17,6 @@ function App() {
         <Route path="/" element={<HomePage />} />
         <Route path="/about" element={<Apage />} />
         <Route path="/upload" element={<Upload />} />
-        {/* <Route path="/form" element={<Formm />} /> */}
-        {/* <Route path="/chatbot" element={<AIChatbotResult />} /> */}
       </Routes>
     </Router>
   );
