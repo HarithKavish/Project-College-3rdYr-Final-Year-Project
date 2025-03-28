@@ -11,9 +11,9 @@ function Navbar() {
             <img src={logo} alt='logo'></img>
             <h1>SkinNet Analyzer</h1>
         </li>
-        <li><Link to="/">Home</Link></li>
-        <li><Link to="/about">About</Link></li>
-        <li><Link to="/upload">Upload</Link></li>
+        <li><Link to="/Project-College-3rdYr-Final-Year-Project/">Home</Link></li>
+        <li><Link to="/Project-College-3rdYr-Final-Year-Project/about">About</Link></li>
+        <li><Link to="/Project-College-3rdYr-Final-Year-Project/upload">Upload</Link></li>
         {/* <li><Link to="/form">Symptoms</Link></li> */}
         {/* <li><Link to="/chatbot">AI Chatbot</Link></li> */}
       </ul>

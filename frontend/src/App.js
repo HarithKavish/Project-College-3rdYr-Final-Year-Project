@@ -14,9 +14,9 @@ function App() {
     <Router>
       <Navbar />
       <Routes>
-        <Route path="/" element={<HomePage />} />
-        <Route path="/about" element={<Apage />} />
-        <Route path="/upload" element={<Upload />} />
+        <Route path="/Project-College-3rdYr-Final-Year-Project/" element={<HomePage />} />
+        <Route path="/Project-College-3rdYr-Final-Year-Project/about" element={<Apage />} />
+        <Route path="/Project-College-3rdYr-Final-Year-Project/upload" element={<Upload />} />
         {/* <Route path="/form" element={<Formm />} /> */}
         {/* <Route path="/chatbot" element={<AIChatbotResult />} /> */}
       </Routes>
