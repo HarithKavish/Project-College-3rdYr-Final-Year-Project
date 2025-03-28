@@ -2,10 +2,10 @@ import React from 'react';
 import './App.css';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import '@fortawesome/fontawesome-free/css/all.min.css';
-import Navbar from './Components/Navbar';
-import HomePage from './Components/Home';
-import Apage from './Components/Ab';
-import Upload from './Components/Upload';
+import Navbar from './components/Navbar';
+import HomePage from './components/Home';
+import Apage from './components/Ab';
+import Upload from './components/Upload';
 // import Formm from './Components/Formm';
 // import AIChatbotResult from './Components/AIBotResult';
 
